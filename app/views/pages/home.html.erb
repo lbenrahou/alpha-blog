@@ -1,0 +1,51 @@
+<!doctype html>	
+<html>	
+<head>	
+<title>Ruby On Rails</title>	
+<style> 
+	
+	IMG.displayed {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	h1{
+		text-align:center;
+	}
+	.leftBlock {
+		margin:40px 0 0 240px;
+		border-right-style:solid;
+		border-top-style:solid;
+		padding-top:20px;
+		width:30%;
+		height:150px;
+		float:left;
+		
+	}
+	
+	.rightBlock{
+	float:left;
+	margin:40px 240px 0 0;
+	padding-left:20px;
+	border-top-style:solid;
+	padding-top:20px;
+	width:30%;
+	
+	
+	}
+</style>
+<h1>Welcome to my homepage!</h1>
+<img class="displayed" <%= image_tag('ruby.jpg', width:800, height:200) %>
+ <%=link_to 'About Us',about_path %>
+
+<div class="leftBlock">
+Software Statistique Teaching
+
+</div>
+<div class="rightBlock">
+Software Statistique Technology
+
+</div>
+
+</head>
+</html>
